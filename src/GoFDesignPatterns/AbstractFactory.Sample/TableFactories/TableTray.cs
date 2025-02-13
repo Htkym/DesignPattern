@@ -1,4 +1,4 @@
-﻿using AbstractFactory.Sample.Factories;
+using AbstractFactory.Sample.Factories;
 using System.Text;
 
 namespace AbstractFactory.Sample.TableFactories
@@ -25,8 +25,5 @@ namespace AbstractFactory.Sample.TableFactories
             buffer.Append("</td>");
             return buffer.ToString();
         }
-    }
-
-    {
     }
 }
