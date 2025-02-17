@@ -1,4 +1,4 @@
-namespace Command.A1
+namespace Command.A2
 {
     internal static class Program
     {

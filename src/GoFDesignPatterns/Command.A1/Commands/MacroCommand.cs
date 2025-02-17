@@ -1,4 +1,4 @@
-namespace Command.Sample.Commands
+namespace Command.A1.Commands
 {
     public class MacroCommand : ICommand
     {

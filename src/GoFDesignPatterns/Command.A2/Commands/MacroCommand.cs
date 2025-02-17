@@ -1,4 +1,4 @@
-namespace Command.Sample.Commands
+namespace Command.A2.Commands
 {
     public class MacroCommand : ICommand
     {
@@ -13,6 +13,12 @@ namespace Command.Sample.Commands
         {
             if (command != this)
                 commands.Push(command);
+        }
+
+        public void Undo()
+        {
+            if (commands.Count != 0)
+                commands.Pop();
         }
 
         public void Clear()

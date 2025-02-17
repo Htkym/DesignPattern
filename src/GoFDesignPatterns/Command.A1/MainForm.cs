@@ -1,7 +1,7 @@
-using Command.Sample.Commands;
-using Command.Sample.Drawers;
+using Command.A1.Commands;
+using Command.A1.Drawers;
 
-namespace Command.Sample;
+namespace Command.A1;
 
 public partial class MainForm : Form
 {
@@ -39,5 +39,24 @@ public partial class MainForm : Form
     {
         commands.Clear();
         drawCanvas1.Invalidate();
+    }
+
+    private void RedButton_Click(object sender, EventArgs e)
+    {
+        var cmd = new ColorCommand(drawCanvas1, Color.Red);
+        commands.Append(cmd);
+        cmd.Execute();
+    }
+    private void GreenButton_Click(object sender, EventArgs e)
+    {
+        var cmd = new ColorCommand(drawCanvas1, Color.Green);
+        commands.Append(cmd);
+        cmd.Execute();
+    }
+    private void BlueButton_Click(object sender, EventArgs e)
+    {
+        var cmd = new ColorCommand(drawCanvas1, Color.Blue);
+        commands.Append(cmd);
+        cmd.Execute();
     }
 }

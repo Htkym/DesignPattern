@@ -1,7 +1,7 @@
-using Command.Sample.Commands;
-using Command.Sample.Drawers;
+using Command.A2.Commands;
+using Command.A2.Drawers;
 
-namespace Command.Sample;
+namespace Command.A2;
 
 public partial class MainForm : Form
 {
@@ -38,6 +38,12 @@ public partial class MainForm : Form
     private void ClearButton_Click(object sender, EventArgs e)
     {
         commands.Clear();
+        drawCanvas1.Invalidate();
+    }
+
+    private void UndoButton_Click(object sender, EventArgs e)
+    {
+        commands.Undo();
         drawCanvas1.Invalidate();
     }
 }

@@ -12,7 +12,9 @@
     <Compile Update="Drawers\DrawCanvas.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="MainForm.cs" />
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 
 </Project>
